@@ -1,0 +1,14 @@
+<p>add works!</p>
+<div>
+    <form>
+        <label for="sname">Student Name:  </label>
+        <input type="text" name="sname" [(ngModel)]="inputName" required><br><br>
+        <label for="sid">Student Id:  </label>
+        <input type="text" name="sid"[(ngModel)]="inputId" required><br><br>
+        <label for="sphno">Student Ph No.:  </label>
+        <input type="text" name="sphno" [(ngModel)]="inputPhno" required><br><br>
+        <button (click)="addDetails()">Submit</button>
+    </form>
+
+    
+</div>

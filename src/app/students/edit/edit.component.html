@@ -1,0 +1,16 @@
+<div *ngIf="selectedStudent">
+    <h3>Edit STudent Details</h3>
+    <form (submit)="onUpdateClick()">
+        <label for="ename">Name:</label>
+        <input type="text" id="ename" name="ename" [(ngModel)]="ename"><br>
+
+        <label for="eid">ID No.:</label>
+        <input type="text" id="eid" name="eid" [(ngModel)]="eid"><br>
+
+        <label for="ephno">Student PhNo.:</label>
+        <input type="text" id="ephno" name="ephno" [(ngModel)]="ephno"><br>
+
+        <input type="submit" value="Update">
+
+    </form>
+</div>

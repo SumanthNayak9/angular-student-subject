@@ -1,0 +1,34 @@
+<p>students works!</p>
+<div>
+  <h3>Student Info</h3>
+  <div>
+    <a routerLink="/students/add"><button>Add Details</button></a>
+  </div>
+  <br />
+  <br />
+  <div>
+    <table class="table table-bordered">
+      <thead class="table-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Id No.</th>
+          <th scope="col">Phone No.</th>
+          <th scope="col">Edit</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let student of retreivedStudentDetails">
+          <td scope="row">{{ student.name }}</td>
+          <td scope="row">{{ student.id }}</td>
+          <td scope="row">{{ student.phno }}</td>
+          <td scope="row">
+            <a [routerLink]="['/students/edit',student.id]"><button class="btn btn-primary" (click)="onEditClick(student)">Edit</button></a>
+          </td>
+          
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
