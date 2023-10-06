@@ -15,7 +15,7 @@ export class SubjectsComponent {
     console.log('Stored Data:', storedSubjectDetails);
     if(storedSubjectDetails){
       this.retreivedSubjectDetails = JSON.parse(storedSubjectDetails);
-      console.log('Parsed Data:', this.retreivedSubjectDetails);
+      // console.log('Parsed Data:', this.retreivedSubjectDetails);
     }
   }
 }
